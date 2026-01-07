@@ -1,7 +1,7 @@
 """
-MusicAI Ultimate Architecture: RAVE-DDSP-Transformer Tri-Hybrid
+Soundstar Ultimate Architecture: RAVE-DDSP-Transformer Tri-Hybrid
 
-This file outlines the advanced, "ultimate sound" architecture for MusicAI,
+This file outlines the advanced, "ultimate sound" architecture for Soundstar,
 integrating RAVE's real-time latent space and high-fidelity decoding with the
 controllability of DDSP and the structural power of the Transformer.
 
@@ -80,7 +80,7 @@ Key Modules:
 - Residual Refinement: DDSP output acts as a residual to the RAVE output.
 
 --------------------------------------------------------------------------------------
-MusicAI Ultimate Generation Pipeline
+Soundstar Ultimate Generation Pipeline
 --------------------------------------------------------------------------------------
 1. User provides Text Prompt + Controls.
 2. ControlEncoder -> Unified Control Embeddings.

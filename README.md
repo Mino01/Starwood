@@ -1,6 +1,6 @@
-# MusicAI: Next-Generation AI Music Generation Framework
+# Soundstar: Next-Generation AI Music Generation Framework
 
-**MusicAI** is an open-source, production-ready framework for high-fidelity, controllable music generation. Inspired by the architectural innovations of leading commercial systems like Suno AI, MusicAI adopts a hybrid approach combining the structural control of Transformer models with the high-quality synthesis capabilities of Differentiable Digital Signal Processing (DDSP).
+**Soundstar** is an open-source, production-ready framework for high-fidelity, controllable music generation. Inspired by the architectural innovations of leading commercial systems like Suno AI, Soundstar adopts a hybrid approach combining the structural control of Transformer models with the high-quality synthesis capabilities of Differentiable Digital Signal Processing (DDSP).
 
 ## Key Features
 
@@ -12,7 +12,7 @@
 
 ## Architecture Overview
 
-The MusicAI architecture is a multi-stage pipeline designed for both quality and control:
+The Soundstar architecture is a multi-stage pipeline designed for both quality and control:
 
 1.  **Text & Control Encoder**: Processes natural language prompts and musical conditioning (genre, tempo, key) into a unified latent representation.
 2.  **Structural Transformer**: An autoregressive model that generates a sequence of musical tokens (e.g., rhythm, harmony, and high-level structure) in the latent space.
@@ -30,8 +30,8 @@ The MusicAI architecture is a multi-stage pipeline designed for both quality and
 ### Installation
 
 ```bash
-git clone https://github.com/Mino01/MusicAI.git
-cd MusicAI
+git clone https://github.com/Mino01/Soundstar.git
+cd Soundstar
 pip install -r requirements.txt
 ```
 
@@ -40,9 +40,9 @@ pip install -r requirements.txt
 *(To be implemented)*
 
 ```python
-from musicai.core.engine import MusicAIEngine
+from soundstar.core.engine import SoundstarEngine
 
-engine = MusicAIEngine()
+engine = SoundstarEngine()
 prompt = "A cinematic orchestral piece with a driving rhythm and a melancholic piano melody."
 audio_file = engine.generate(prompt, duration=30, genre="Cinematic", tempo=120)
 
@@ -52,8 +52,8 @@ print(f"Generated audio saved to: {audio_file}")
 ## Project Structure
 
 ```
-MusicAI/
-├── musicai/                  # Core Python package
+Soundstar/
+├── soundstar/                # Core Python package
 │   ├── core/                 # Main engine, pipeline, and control logic
 │   ├── models/               # Transformer, DDSP, and Codec implementations
 │   ├── tools/                # Utility scripts (e.g., data preprocessing, model conversion)

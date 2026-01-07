@@ -1,6 +1,6 @@
 {
   "project_info": {
-    "title": "MusicAI: The RAVE-DDSP-Transformer Tri-Hybrid Architecture",
+    "title": "Soundstar: The RAVE-DDSP-Transformer Tri-Hybrid Architecture",
     "created": 1767782305.4133353,
     "last_updated": 1767782385.5508034,
     "total_slides": 10
@@ -20,7 +20,7 @@
   "outline": [
     {
       "id": "title_slide",
-      "title": "MusicAI: The RAVE-DDSP-Transformer Tri-Hybrid Architecture",
+      "title": "Soundstar: The RAVE-DDSP-Transformer Tri-Hybrid Architecture",
       "summary": "Unveiling the ultimate sound engine for controllable, high-fidelity, and real-time music generation.",
       "image_plan": "Use a suitable image if needed",
       "slide_template_key": ""
@@ -28,14 +28,14 @@
     {
       "id": "the_vision",
       "title": "The Vision: Crafting the Ultimate Sound Engine",
-      "summary": "MusicAI integrates RAVE, DDSP, and Transformer to overcome limitations of existing generative models, aiming for unparalleled quality, control, and real-time performance.",
+      "summary": "Soundstar integrates RAVE, DDSP, and Transformer to overcome limitations of existing generative models, aiming for unparalleled quality, control, and real-time performance.",
       "image_plan": "Use a suitable image if needed",
       "slide_template_key": ""
     },
     {
       "id": "tri_hybrid_components",
       "title": "Tri-Hybrid Components: A Synergistic Approach",
-      "summary": "An overview of the three core technologies—RAVE, DDSP, and Transformer—and how their combined strengths form the foundation of MusicAI's innovative architecture.",
+      "summary": "An overview of the three core technologies—RAVE, DDSP, and Transformer—and how their combined strengths form the foundation of Soundstar's innovative architecture.",
       "image_plan": "Use a suitable image if needed",
       "slide_template_key": ""
     },
@@ -76,8 +76,8 @@
     },
     {
       "id": "key_advantages",
-      "title": "Key Advantages: Why MusicAI Stands Out",
-      "summary": "Summarizing MusicAI's unique benefits: unparalleled audio fidelity, precise and interpretable control, real-time generation capabilities, and a modular, extensible architecture.",
+      "title": "Key Advantages: Why Soundstar Stands Out",
+      "summary": "Summarizing Soundstar's unique benefits: unparalleled audio fidelity, precise and interpretable control, real-time generation capabilities, and a modular, extensible architecture.",
       "image_plan": "Use a suitable image if needed",
       "slide_template_key": ""
     },

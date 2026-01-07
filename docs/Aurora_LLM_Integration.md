@@ -1,6 +1,6 @@
-# Integrating Aurora LLM with MusicAI via LM Studio
+# Integrating Aurora LLM with Soundstar via LM Studio
 
-The **Aurora LLM** is a powerful, context-aware language model that can significantly enhance the **MusicAI** framework's ability to interpret complex natural language prompts and generate sophisticated musical structures. This document outlines how to integrate Aurora, running locally via **LM Studio**, into the MusicAI pipeline.
+The **Aurora LLM** is a powerful, context-aware language model that can significantly enhance the **Soundstar** framework's ability to interpret complex natural language prompts and generate sophisticated musical structures. This document outlines how to integrate Aurora, running locally via **LM Studio**, into the Soundstar pipeline.
 
 ## I. Architectural Enhancement Points
 
@@ -22,7 +22,7 @@ LM Studio provides a local, OpenAI-compatible API endpoint for running large lan
 3.  **Configure Endpoint**: Ensure the server is running on the default host and port (e.g., `http://localhost:1234`).
 4.  **API Key**: While not strictly necessary for a local server, a dummy API key can be used if the client requires one.
 
-### B. MusicAI `requirements.txt` Update
+### B. Soundstar `requirements.txt` Update
 
 The `openai` Python library is the standard way to interact with the LM Studio API.
 
@@ -147,7 +147,7 @@ class StructuralTransformerRAVE(nn.Module):
         pass
 ```
 
-By leveraging the Aurora LLM through LM Studio, MusicAI gains a powerful, locally-run semantic layer, moving the framework closer to the goal of the "ultimate sound" engine with unparalleled controllability.
+By leveraging the Aurora LLM through LM Studio, Soundstar gains a powerful, locally-run semantic layer, moving the framework closer to the goal of the "ultimate sound" engine with unparalleled controllability.
 
 ***
 
@@ -155,4 +155,4 @@ By leveraging the Aurora LLM through LM Studio, MusicAI gains a powerful, locall
 
 [1] LM Studio. *Run local LLMs on your desktop*. https://lmstudio.ai/
 [2] OpenAI. *API Reference*. https://platform.openai.com/docs/api-reference
-[3] MusicAI Project. *MusicAI Architecture: A Hybrid Synthesis Engine*. (See `docs/MusicAI_Architecture.md`)
+[3] Soundstar Project. *Soundstar Architecture: A Hybrid Synthesis Engine*. (See `docs/Soundstar_Architecture.md`)

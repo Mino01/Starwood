@@ -1,16 +1,16 @@
-# MusicAI: The RAVE-DDSP-Transformer Tri-Hybrid Architecture - Presentation Outline
+# Soundstar: The RAVE-DDSP-Transformer Tri-Hybrid Architecture - Presentation Outline
 
 ## Slide 1: Title Slide
-**Page Title**: MusicAI: The RAVE-DDSP-Transformer Tri-Hybrid Architecture
+**Page Title**: Soundstar: The RAVE-DDSP-Transformer Tri-Hybrid Architecture
 **Summary**: Unveiling the ultimate sound engine for controllable, high-fidelity, and real-time music generation.
 
 ## Slide 2: The Vision: Crafting the Ultimate Sound Engine
 **Page Title**: The Vision: Crafting the Ultimate Sound Engine
-**Summary**: MusicAI integrates RAVE, DDSP, and Transformer to overcome limitations of existing generative models, aiming for unparalleled quality, control, and real-time performance.
+**Summary**: Soundstar integrates RAVE, DDSP, and Transformer to overcome limitations of existing generative models, aiming for unparalleled quality, control, and real-time performance.
 
 ## Slide 3: Tri-Hybrid Components: A Synergistic Approach
 **Page Title**: Tri-Hybrid Components: A Synergistic Approach
-**Summary**: An overview of the three core technologies—RAVE, DDSP, and Transformer—and how their combined strengths form the foundation of MusicAI's innovative architecture.
+**Summary**: An overview of the three core technologies—RAVE, DDSP, and Transformer—and how their combined strengths form the foundation of Soundstar's innovative architecture.
 
 ## Slide 4: RAVE: Real-time Latent Space for High-Fidelity Texture
 **Page Title**: RAVE: Real-time Latent Space for High-Fidelity Texture
@@ -32,9 +32,9 @@
 **Page Title**: Aurora LLM Integration: Semantic-Aware Control
 **Summary**: The Aurora LLM enhances the Control Encoder by performing semantic deconstruction of natural language prompts and providing structural guidance, enabling sophisticated, semantic-aware composition.
 
-## Slide 9: Key Advantages: Why MusicAI Stands Out
-**Page Title**: Key Advantages: Why MusicAI Stands Out
-**Summary**: Summarizing MusicAI's unique benefits: unparalleled audio fidelity, precise and interpretable control, real-time generation capabilities, and a modular, extensible architecture.
+## Slide 9: Key Advantages: Why Soundstar Stands Out
+**Page Title**: Key Advantages: Why Soundstar Stands Out
+**Summary**: Summarizing Soundstar's unique benefits: unparalleled audio fidelity, precise and interpretable control, real-time generation capabilities, and a modular, extensible architecture.
 
 ## Slide 10: Conclusion & Future Outlook
 **Page Title**: Conclusion & Future Outlook

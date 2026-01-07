@@ -1,7 +1,7 @@
 """
-MusicAI Core Architecture Design
+Soundstar Core Architecture Design
 
-This file outlines the high-level architecture and core components of the MusicAI framework,
+This file outlines the high-level architecture and core components of the Soundstar framework,
 combining the best practices from open-source research (MusicGen, Stable Audio) and
 advanced synthesis techniques (DDSP, EnCodec).
 
@@ -91,7 +91,7 @@ Key Modules:
 - Melodic Encoder (e.g., CNN or RNN)
 
 --------------------------------------------------------------------------------------
-MusicAI Generation Pipeline (High-Level)
+Soundstar Generation Pipeline (High-Level)
 --------------------------------------------------------------------------------------
 1. User provides Text Prompt + Controls.
 2. ControlEncoder -> Unified Control Embeddings.

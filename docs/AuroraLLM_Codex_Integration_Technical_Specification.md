@@ -1,4 +1,4 @@
-# Aurora LLM Integration with MusicAI Tri-Hybrid Engine
+# Aurora LLM Integration with Soundstar Tri-Hybrid Engine
 
 ## Technical Specification Document
 
@@ -27,18 +27,18 @@
 
 ## 1. Executive Summary
 
-This technical specification document outlines the architecture of **Aurora LLM** as the primary semantic intelligence layer for the **MusicAI Tri-Hybrid Engine**, with **GPT Codex** serving as the underlying implementation tool. The primary objective is to enable **natural language-driven music generation** with **intelligent prompt enhancement**, allowing users to describe their musical vision in plain English and receive high-fidelity, semantically coherent audio output.
+This technical specification document outlines the architecture of **Aurora LLM** as the primary semantic intelligence layer for the **Soundstar Tri-Hybrid Engine**, with **GPT Codex** serving as the underlying implementation tool. The primary objective is to enable **natural language-driven music generation** with **intelligent prompt enhancement**, allowing users to describe their musical vision in plain English and receive high-fidelity, semantically coherent audio output.
 
 ### Key Architectural Distinction
 
 | Component | Role | Description |
 |-----------|------|-------------|
-| **Aurora LLM** | **Primary Architecture** | The semantic intelligence layer that defines the music understanding pipeline, orchestrates all NLP operations, and provides the unified interface for the MusicAI system |
+| **Aurora LLM** | **Primary Architecture** | The semantic intelligence layer that defines the music understanding pipeline, orchestrates all NLP operations, and provides the unified interface for the Soundstar system |
 | **GPT Codex** | **Implementation Tool** | The underlying engine that Aurora LLM uses internally to perform specific NLP tasks such as prompt parsing, enhancement, and structured output generation |
 
 This separation of concerns provides several advantages:
 
-1. **Abstraction**: The MusicAI system interacts only with Aurora LLM, not directly with Codex, allowing for future backend swaps.
+1. **Abstraction**: The Soundstar system interacts only with Aurora LLM, not directly with Codex, allowing for future backend swaps.
 2. **Customization**: Aurora LLM can apply music-specific fine-tuning, prompt engineering, and post-processing on top of Codex outputs.
 3. **Resilience**: Aurora LLM can implement fallback strategies when Codex is unavailable.
 4. **Consistency**: Aurora LLM ensures consistent behavior and output formats regardless of the underlying implementation.
@@ -49,7 +49,7 @@ This separation of concerns provides several advantages:
 
 ### 2.1 High-Level System Architecture
 
-Aurora LLM serves as the **Semantic Intelligence Layer** that sits between the user interface and the MusicAI Tri-Hybrid Engine's Control Encoder. Internally, Aurora LLM leverages GPT Codex as its primary implementation tool for natural language processing tasks.
+Aurora LLM serves as the **Semantic Intelligence Layer** that sits between the user interface and the Soundstar Tri-Hybrid Engine's Control Encoder. Internally, Aurora LLM leverages GPT Codex as its primary implementation tool for natural language processing tasks.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -142,7 +142,7 @@ Aurora LLM serves as the **Semantic Intelligence Layer** that sits between the u
 
 ### 3.1 Aurora LLM Core Design
 
-Aurora LLM is designed as a **modular, music-specialized semantic intelligence system**. It provides a unified interface for all natural language processing needs within MusicAI, abstracting away the complexity of the underlying implementation tools.
+Aurora LLM is designed as a **modular, music-specialized semantic intelligence system**. It provides a unified interface for all natural language processing needs within Soundstar, abstracting away the complexity of the underlying implementation tools.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -180,7 +180,7 @@ Aurora LLM is designed as a **modular, music-specialized semantic intelligence s
 │  │                                                                       │    │
 │  │  ┌─────────────────────────────────────────────────────────────┐    │    │
 │  │  │  PARAMETER MAPPER MODULE                                     │    │    │
-│  │  │  - Maps extracted entities to MusicAI schema                 │    │    │
+│  │  │  - Maps extracted entities to Soundstar schema                 │    │    │
 │  │  │  - Applies music theory rules                                │    │    │
 │  │  │  - Validates parameter coherence                             │    │    │
 │  │  │  [Implementation: Rule-based + Codex validation]             │    │    │
@@ -242,7 +242,7 @@ Aurora LLM uses Codex with an entity extraction prompt that outputs structured J
 
 #### 3.2.3 Parameter Mapper Module
 
-The Parameter Mapper Module converts extracted entities into MusicAI's internal parameter schema.
+The Parameter Mapper Module converts extracted entities into Soundstar's internal parameter schema.
 
 **Responsibilities:**
 - Map genre names to genre embeddings
@@ -436,7 +436,7 @@ OUTPUT FORMAT:
 Aurora LLM applies the following post-processing steps to Codex responses:
 
 1. **JSON Validation**: Ensure the response is valid JSON matching the expected schema.
-2. **Value Normalization**: Normalize values to MusicAI's internal formats (e.g., tempo to [0, 1]).
+2. **Value Normalization**: Normalize values to Soundstar's internal formats (e.g., tempo to [0, 1]).
 3. **Confidence Thresholding**: Flag low-confidence values for user review.
 4. **Music Theory Validation**: Check for musically coherent combinations (e.g., tempo-genre compatibility).
 5. **Embedding Generation**: Convert categorical values to numerical embeddings.
@@ -679,7 +679,7 @@ Aurora LLM orchestrates a five-stage pipeline for translating natural language t
 │                                    ▼                                         │
 │  Stage 4: Parameter Mapping                                                 │
 │  ┌─────────────────────────────────────────────────────────────────────┐    │
-│  │  - Map to MusicAI schema                                             │    │
+│  │  - Map to Soundstar schema                                             │    │
 │  │  - Apply music theory rules                                          │    │
 │  │  - Validate coherence                                                │    │
 │  │  [Implementation: Rule-based + Codex validation]                     │    │
@@ -727,9 +727,9 @@ Aurora LLM sends the enhanced prompt to Codex using the Semantic Parsing Templat
 
 #### Stage 4: Parameter Mapping (Rule-Based + Codex)
 
-Aurora LLM maps extracted entities to MusicAI's schema:
+Aurora LLM maps extracted entities to Soundstar's schema:
 
-| Extracted Entity | MusicAI Parameter | Mapping Logic |
+| Extracted Entity | Soundstar Parameter | Mapping Logic |
 |------------------|-------------------|---------------|
 | `genre` | `genre_embedding` | Lookup in genre taxonomy |
 | `tempo.bpm` | `tempo_normalized` | `(bpm - 60) / (200 - 60)` |
@@ -1283,12 +1283,12 @@ aurora:
 
 | Term | Definition |
 |------|------------|
-| **Aurora LLM** | MusicAI's primary semantic intelligence layer that orchestrates all NLP operations |
+| **Aurora LLM** | Soundstar's primary semantic intelligence layer that orchestrates all NLP operations |
 | **GPT Codex** | OpenAI's model used as the implementation tool for Aurora LLM's NLP tasks |
 | **Implementation Tool** | The underlying engine (Codex, Local LLM, or Rule-Based) that Aurora uses to perform tasks |
 | **Prompt Enhancement** | The process of adding musical context to raw user prompts |
 | **Semantic Parsing** | Extracting structured musical entities from natural language |
-| **Parameter Mapping** | Converting extracted entities to MusicAI's internal schema |
+| **Parameter Mapping** | Converting extracted entities to Soundstar's internal schema |
 | **Structural Planning** | Generating detailed section-by-section plans for music |
 | **Unified Control Embedding** | The final numerical representation of all musical parameters |
 

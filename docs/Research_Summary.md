@@ -15,7 +15,7 @@ The key takeaway from Suno is the successful combination of a language model for
 
 ## II. Open-Source Generative Models
 
-The open-source community provides several robust frameworks that inform the MusicAI design:
+The open-source community provides several robust frameworks that inform the Soundstar design:
 
 ### A. Meta AudioCraft (MusicGen, AudioGen) [4]
 *   **Architecture**: Single Language Model (LM) operating on discrete audio tokens (from EnCodec).
@@ -33,7 +33,7 @@ The open-source community provides several robust frameworks that inform the Mus
 
 ## III. Advanced Audio Synthesis Engines
 
-To achieve the high-fidelity and controllability required for MusicAI, the synthesis stage must move beyond simple vocoders.
+To achieve the high-fidelity and controllability required for Soundstar, the synthesis stage must move beyond simple vocoders.
 
 ### A. DDSP (Differentiable Digital Signal Processing) [2]
 *   **Concept**: Uses a neural network to control the parameters of classical DSP modules (oscillators, filters).
@@ -47,15 +47,15 @@ To achieve the high-fidelity and controllability required for MusicAI, the synth
 *   **Concept**: GAN-based model to convert spectrograms to raw audio.
 *   **Advantage**: **Speed** and **high fidelity** for speech and music, often used as the final stage in many text-to-speech pipelines.
 
-## IV. MusicAI Synthesis Strategy
+## IV. Soundstar Synthesis Strategy
 
-The MusicAI architecture is a synthesis of these findings, designed to capture the best of each approach:
+The Soundstar architecture is a synthesis of these findings, designed to capture the best of each approach:
 
 1.  **EnCodec-style Codec**: Provides the efficient, discrete latent space for the Structural Transformer.
 2.  **Structural Transformer (MusicGen-style)**: Models the long-range musical structure and harmony.
 3.  **DDSP-Inspired Core**: Provides the final, high-quality, and interpretable audio synthesis layer, translating the abstract tokens into physical sound controls.
 
-This hybrid approach ensures that MusicAI is both structurally sound and acoustically rich, offering a strong foundation for a production-ready, open-source music generation framework.
+This hybrid approach ensures that Soundstar is both structurally sound and acoustically rich, offering a strong foundation for a production-ready, open-source music generation framework.
 
 ***
 
