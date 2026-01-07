@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Transformer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #0F1419 0%, #1a2332 100%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            position: relative;
+        }
+        
+        .left-content {
+            padding-top: 80px;
+            padding-left: 80px;
+            padding-right: 40px;
+        }
+        
+        .accent-bar {
+            width: 5px;
+            height: 40px;
+            background: #1E90FF;
+            margin-bottom: 15px;
+        }
+        
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+        
+        .body-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #C0C0C0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .capabilities-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #1E90FF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+        
+        .capability-item {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .capability-item:before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            color: #1E90FF;
+            font-size: 10px;
+        }
+        
+        .right-content {
+            padding-top: 80px;
+            padding-right: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .flow-box {
+            width: 200px;
+            height: 90px;
+            border: 2px solid #1E90FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(30, 144, 255, 0.08);
+            text-align: center;
+        }
+        
+        .flow-box-icon {
+            font-size: 32px;
+            color: #1E90FF;
+            margin-bottom: 8px;
+        }
+        
+        .flow-box-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        
+        .flow-box-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #C0C0C0;
+            margin-top: 4px;
+        }
+        
+        .flow-arrow {
+            font-size: 24px;
+            color: #1E90FF;
+            height: 15px;
+        }
+        
+        .transformer-box {
+            width: 200px;
+            height: 110px;
+            border: 3px solid #1E90FF;
+            background: rgba(30, 144, 255, 0.12);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .transformer-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E90FF;
+            margin-bottom: 8px;
+        }
+        
+        .transformer-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #C0C0C0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-content">
+            <div class="accent-bar"></div>
+            <h2 class="heading">Structural Transformer: Musical Coherence in Latent Space</h2>
+            <p class="body-text">The Structural Transformer operates directly in RAVE's continuous latent space, generating a single, dense vector that encapsulates the entire musical piece's structure. This approach is highly efficient for modeling long-form music while maintaining semantic coherence.</p>
+            <p class="body-text">By conditioning on the Unified Control Embedding, the Transformer learns to generate musically coherent latent representations that capture melody, harmony, rhythm, and overall structure.</p>
+            
+            <div class="capabilities-title">Key Capabilities</div>
+            <div class="capability-item">Continuous latent modeling</div>
+            <div class="capability-item">Multi-modal conditioning (text, genre, tempo)</div>
+            <div class="capability-item">Long-form music generation</div>
+            <div class="capability-item">Semantic structure preservation</div>
+            <div class="capability-item">Efficient latent space navigation</div>
+        </div>
+        
+        <div class="right-content">
+            <div class="flow-box">
+                <div class="flow-box-icon"><i class="fas fa-sliders"></i></div>
+                <div class="flow-box-label">Control Embeddings</div>
+                <div class="flow-box-description">Text + Musical Parameters</div>
+            </div>
+            
+            <div class="flow-arrow">↓</div>
+            
+            <div class="transformer-box">
+                <div class="transformer-label">Transformer</div>
+                <div class="transformer-description">Multi-Head Attention<br/>Self-Attention Layers<br/>Feed-Forward Networks</div>
+            </div>
+            
+            <div class="flow-arrow">↓</div>
+            
+            <div class="flow-box">
+                <div class="flow-box-icon"><i class="fas fa-cube"></i></div>
+                <div class="flow-box-label">RAVE Latent Vector</div>
+                <div class="flow-box-description">z ∈ ℝ^512</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

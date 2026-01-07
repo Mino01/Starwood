@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Synthesis Mixer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #0F1419 0%, #1a2332 100%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            position: relative;
+        }
+        
+        .left-content {
+            padding-top: 80px;
+            padding-left: 80px;
+            padding-right: 40px;
+        }
+        
+        .accent-bar {
+            width: 5px;
+            height: 40px;
+            background: #1E90FF;
+            margin-bottom: 15px;
+        }
+        
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+        
+        .body-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #C0C0C0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .formula-box {
+            background: rgba(30, 144, 255, 0.08);
+            border: 1px solid rgba(30, 144, 255, 0.3);
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #1E90FF;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .benefit-section {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(30, 144, 255, 0.3);
+        }
+        
+        .benefit-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1E90FF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        
+        .benefit-item {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            color: #C0C0C0;
+            margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
+        }
+        
+        .benefit-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1E90FF;
+        }
+        
+        .right-content {
+            padding-top: 80px;
+            padding-right: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .flow-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        .synthesis-path {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .path-source {
+            width: 100%;
+            height: 70px;
+            border: 2px solid #1E90FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(30, 144, 255, 0.05);
+        }
+        
+        .path-icon {
+            font-size: 24px;
+            color: #1E90FF;
+            margin-bottom: 4px;
+        }
+        
+        .path-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        
+        .path-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #C0C0C0;
+            text-align: center;
+            max-width: 120px;
+        }
+        
+        .arrow-down {
+            font-size: 20px;
+            color: #1E90FF;
+            height: 20px;
+        }
+        
+        .mixer-box {
+            width: 100%;
+            height: 80px;
+            border: 3px solid #1E90FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(30, 144, 255, 0.1);
+            margin-top: 10px;
+        }
+        
+        .mixer-icon {
+            font-size: 28px;
+            color: #1E90FF;
+            margin-bottom: 4px;
+        }
+        
+        .mixer-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        
+        .final-output {
+            width: 100%;
+            height: 70px;
+            border: 2px solid #1E90FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(30, 144, 255, 0.08);
+            margin-top: 15px;
+        }
+        
+        .output-icon {
+            font-size: 24px;
+            color: #1E90FF;
+            margin-bottom: 4px;
+        }
+        
+        .output-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        
+        .output-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-content">
+            <div class="accent-bar"></div>
+            <h2 class="heading">Ultimate Synthesis Mixer: Blending for Sonic Perfection</h2>
+            <p class="body-text">The final stage of MusicAI's pipeline is a learned neural network that intelligently blends the outputs of two high-quality synthesis paths: the rich, real-time texture from RAVE and the clean, physically-modeled timbre from DDSP.</p>
+            
+            <div class="formula-box">
+                w<sub>final</sub> = Mixer(w<sub>rave</sub>, w<sub>ddsp</sub>, p<sub>ddsp</sub>)
+            </div>
+            
+            <div class="benefit-section">
+                <div class="benefit-title">Blending Benefits</div>
+                <div class="benefit-item">RAVE provides rich, high-frequency detail</div>
+                <div class="benefit-item">DDSP provides clean, interpretable control</div>
+                <div class="benefit-item">Learned mixer optimizes the combination</div>
+                <div class="benefit-item">Seamless, superior final audio quality</div>
+            </div>
+        </div>
+        
+        <div class="right-content">
+            <div class="flow-container">
+                <div class="synthesis-path">
+                    <div class="path-source">
+                        <div class="path-icon"><i class="fas fa-waveform-lines"></i></div>
+                        <div class="path-label">RAVE Path</div>
+                    </div>
+                    <div class="path-description">High-fidelity texture</div>
+                    <div class="arrow-down">↓</div>
+                    <div style="width: 100%; height: 40px;"></div>
+                </div>
+                
+                <div class="synthesis-path">
+                    <div class="path-source">
+                        <div class="path-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="path-label">DDSP Path</div>
+                    </div>
+                    <div class="path-description">Controllable timbre</div>
+                    <div class="arrow-down">↓</div>
+                    <div style="width: 100%; height: 40px;"></div>
+                </div>
+            </div>
+            
+            <div class="mixer-box">
+                <div class="mixer-icon"><i class="fas fa-sliders"></i></div>
+                <div class="mixer-label">Ultimate Mixer</div>
+            </div>
+            
+            <div class="final-output">
+                <div class="output-icon"><i class="fas fa-music"></i></div>
+                <div class="output-label">Final Audio</div>
+                <div class="output-description">w<sub>final</sub></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicAI: The RAVE-DDSP-Transformer Tri-Hybrid Architecture</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #0F1419 0%, #1a2332 100%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .left-section {
+            padding-top: 60px;
+            padding-left: 80px;
+            padding-right: 40px;
+            z-index: 2;
+        }
+        
+        .title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+            color: #1E90FF;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+        
+        .tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #C0C0C0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #1E90FF 0%, #C0C0C0 100%);
+            margin-bottom: 30px;
+        }
+        
+        .right-section {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .geometric-shape {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border: 3px solid #1E90FF;
+            border-radius: 50%;
+            opacity: 0.2;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+        }
+        
+        .geometric-shape-inner {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #C0C0C0;
+            border-radius: 50%;
+            opacity: 0.15;
+            top: 50%;
+            right: 150px;
+            transform: translateY(-50%);
+        }
+        
+        .icon-group {
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        
+        .icon {
+            font-size: 48px;
+            color: #1E90FF;
+            margin: 20px 0;
+            opacity: 0.6;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            left: 80px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #C0C0C0;
+        }
+        
+        .footer-item {
+            display: inline-block;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-section">
+            <div class="accent-line"></div>
+            <h1 class="title">MusicAI</h1>
+            <p class="subtitle">The RAVE-DDSP-Transformer Tri-Hybrid Architecture</p>
+            <p class="tagline">The Ultimate Sound Engine</p>
+        </div>
+        
+        <div class="right-section">
+            <div class="geometric-shape"></div>
+            <div class="geometric-shape-inner"></div>
+            <div class="icon-group">
+                <div class="icon"><i class="fas fa-waveform-lines"></i></div>
+                <div class="icon"><i class="fas fa-microchip"></i></div>
+                <div class="icon"><i class="fas fa-music"></i></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <span class="footer-item"><strong>By:</strong> Manus AI</span>
+            <span class="footer-item"><strong>Year:</strong> 2026</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora LLM Integration</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #0F1419 0%, #1a2332 100%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            position: relative;
+        }
+        
+        .left-content {
+            padding-top: 80px;
+            padding-left: 80px;
+            padding-right: 40px;
+        }
+        
+        .accent-bar {
+            width: 5px;
+            height: 40px;
+            background: #1E90FF;
+            margin-bottom: 15px;
+        }
+        
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.3;
+            margin-bottom: 30px;
+        }
+        
+        .body-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #C0C0C0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .feature-list {
+            margin-top: 25px;
+        }
+        
+        .feature-item {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #1E90FF;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .feature-item:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #1E90FF;
+        }
+        
+        .right-content {
+            padding-top: 80px;
+            padding-right: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .example-box {
+            border: 2px solid #1E90FF;
+            padding: 20px;
+            background: rgba(30, 144, 255, 0.05);
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .example-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E90FF;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .example-icon {
+            font-size: 18px;
+        }
+        
+        .example-content {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            color: #C0C0C0;
+            line-height: 1.6;
+        }
+        
+        .example-arrow {
+            font-size: 12px;
+            color: #1E90FF;
+            margin: 8px 0;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-content">
+            <div class="accent-bar"></div>
+            <h2 class="heading">Aurora LLM Integration: Semantic-Aware Control</h2>
+            <p class="body-text">The Aurora LLM (running via LM Studio) enhances the Control Encoder by performing deep semantic analysis of natural language prompts. This enables MusicAI to understand complex musical intent and translate it into precise, actionable parameters.</p>
+            
+            <div class="feature-list">
+                <div class="feature-item">Semantic Deconstruction of prompts</div>
+                <div class="feature-item">Extraction of explicit musical parameters</div>
+                <div class="feature-item">High-level structural guidance generation</div>
+                <div class="feature-item">Coherent, form-aware composition</div>
+            </div>
+        </div>
+        
+        <div class="right-content">
+            <div class="example-box">
+                <div class="example-title">
+                    <span class="example-icon"><i class="fas fa-language"></i></span>
+                    Semantic Deconstruction
+                </div>
+                <div class="example-content">
+                    "A melancholic, driving cinematic piece"
+                </div>
+                <div class="example-arrow">↓</div>
+                <div class="example-content" style="color: #1E90FF;">
+                    Key: A minor | Tempo: 110 BPM | Mood: Introspective | Instrumentation: Strings + Piano
+                </div>
+            </div>
+            
+            <div class="example-box">
+                <div class="example-title">
+                    <span class="example-icon"><i class="fas fa-sitemap"></i></span>
+                    Structural Guidance
+                </div>
+                <div class="example-content">
+                    Musical form generation
+                </div>
+                <div class="example-arrow">↓</div>
+                <div class="example-content" style="color: #1E90FF;">
+                    Verse (8s) → Chorus (8s) → Bridge (4s) → Chorus (8s)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

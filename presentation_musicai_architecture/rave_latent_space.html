@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAVE: Real-time Latent Space for High-Fidelity Texture</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #0F1419 0%, #1a2332 100%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            position: relative;
+        }
+        
+        .left-content {
+            padding-top: 80px;
+            padding-left: 80px;
+            padding-right: 40px;
+        }
+        
+        .accent-bar {
+            width: 5px;
+            height: 40px;
+            background: #1E90FF;
+            margin-bottom: 15px;
+        }
+        
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+        
+        .body-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #C0C0C0;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        
+        .features-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #1E90FF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-item {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .feature-item:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #1E90FF;
+        }
+        
+        .right-content {
+            padding-top: 80px;
+            padding-right: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .flow-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+        }
+        
+        .flow-stage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .flow-icon {
+            font-size: 40px;
+            color: #1E90FF;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #1E90FF;
+            background: rgba(30, 144, 255, 0.05);
+        }
+        
+        .flow-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 100px;
+        }
+        
+        .flow-arrow {
+            font-size: 24px;
+            color: #1E90FF;
+            height: 20px;
+        }
+        
+        .latent-space-box {
+            border: 2px dashed #1E90FF;
+            padding: 15px;
+            text-align: center;
+            background: rgba(30, 144, 255, 0.08);
+            width: 160px;
+        }
+        
+        .latent-space-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            color: #C0C0C0;
+            margin-bottom: 5px;
+        }
+        
+        .latent-space-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #1E90FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-content">
+            <div class="accent-bar"></div>
+            <h2 class="heading">RAVE: Real-time Latent Space for High-Fidelity Texture</h2>
+            <p class="body-text">RAVE (Realtime Audio Variational autoEncoder) provides the primary musical language for MusicAI's Transformer. Its robust, continuous latent space enables efficient modeling of long-form music while maintaining high-fidelity audio reconstruction.</p>
+            
+            <div class="features-title">Key Capabilities</div>
+            <div class="feature-item">Continuous latent representation</div>
+            <div class="feature-item">Real-time audio decoding (20× faster than real-time)</div>
+            <div class="feature-item">High-fidelity stereo output at 44.1kHz</div>
+            <div class="feature-item">Efficient long-form music modeling</div>
+            <div class="feature-item">Seamless integration with Transformer</div>
+        </div>
+        
+        <div class="right-content">
+            <div class="flow-diagram">
+                <div class="flow-stage">
+                    <div class="flow-icon"><i class="fas fa-waveform-lines"></i></div>
+                    <div class="flow-label">Raw Audio</div>
+                </div>
+                
+                <div class="flow-arrow">↓</div>
+                
+                <div class="flow-stage">
+                    <div class="latent-space-box">
+                        <div class="latent-space-label">RAVE Encoder</div>
+                        <div class="latent-space-value">z ∈ ℝ^512</div>
+                    </div>
+                    <div class="flow-label">Latent Space</div>
+                </div>
+                
+                <div class="flow-arrow">↓</div>
+                
+                <div class="flow-stage">
+                    <div class="flow-icon"><i class="fas fa-music"></i></div>
+                    <div class="flow-label">High-Fidelity Audio</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
